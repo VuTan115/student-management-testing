@@ -11,7 +11,7 @@
     </style>
 
     <div>
-        <p class="card-title grade">Kết quả học tập của {{ $user->name . ' ' . $user->msv }}</p>
+        <p class="card-title grade text-center">Kết quả học tập của {{ $user->name . ' ' . $user->msv }}</p>
         <div class="row">
             <div class='col-md-1 d-flex justify-content-center align-item-center' name='label'
                 style='padding-right: 0px; height: 54px;'>

@@ -4,6 +4,7 @@
             padding: 0px 5px 0px 0px;
         }
 
+
     </style>
     <div>
         <p class="task-title card-title">Công việc</p>
@@ -127,7 +128,7 @@
                         <td class="id align-middle">{{ $task->id }}</td>
                         <td class="name align-middle">{{ $task->name }}</td>
                         <td class="align-middle">{{ $task->deadline }}</td>
-                        <td class="progress align-middle">
+                        <td class="progress align-middle" style="display: table-cell;padding: 0;background: transparent; width: fit-content;">
                             @php
                                 $progress_type;
                                 if ($task->progress < 33) {
@@ -138,7 +139,7 @@
                                     $progress_type = 'bg-success';
                                 }
                             @endphp
-                            <div class="progress">
+                            <div class="progress block">
                                 <div class="progress-bar align-middle {{ $progress_type }}" role="progressbar"
                                     style="width: {{ $task->progress }}%" aria-valuenow="75" aria-valuemin="0"
                                     aria-valuemax="100"></div>
